@@ -7,6 +7,16 @@ const nextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   reactCompiler: true,
+  
+  async redirects() {
+    return [
+      {
+        source: "/products",
+        destination: "/shop",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

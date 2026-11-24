@@ -1,0 +1,43 @@
+.mobileNav {
+    height: 7rem;
+    background-color: var(--bg-main);
+
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid var(--border-main);
+    transform: translateY(0);
+    transition:
+        transform 300ms ease,
+        box-shadow 300ms ease;
+
+    z-index: 60;
+}
+
+@media(max-width: 600px) {
+    .mobileNav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.scrolled {
+    transform: translateY(100%);
+    box-shadow: 0 -5px 15px -4px var(--shadow-80);
+}
+
+.navIcon{
+    position: relative;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLabel {
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-medium);
+}

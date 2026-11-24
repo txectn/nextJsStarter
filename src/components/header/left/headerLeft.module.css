@@ -1,0 +1,31 @@
+.logo{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: var(--fs-lg);
+    color: var(--text-main);
+    font-weight: var(--fw-semibold);
+    text-transform: uppercase;
+}
+
+.logo img{
+    transition: rotate 0.3s ease;
+}
+
+@media(pointer: fine) {
+    .logo:hover img{
+        rotate: -30deg;
+    }
+}
+
+@media(pointer: coarse) {
+    .logo:active img{
+        rotate: -30deg;
+    }
+}
+
+.logo span{
+    display: flex;
+    align-items: center;
+}

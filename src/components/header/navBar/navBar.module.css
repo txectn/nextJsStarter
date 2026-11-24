@@ -1,0 +1,11 @@
+.navBar{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.link{
+    font-size: var(--fs-base);
+    color: var(--text-main);
+    font-weight: var(--fw-medium);
+}
